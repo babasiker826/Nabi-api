@@ -110,7 +110,7 @@ def home():
     models_list = "\n".join([f"- {model}: {BOT_MODELS[model]}" for model in BOT_MODELS])
     return Response(
         json.dumps({
-            "status": "Nabi API çalışıyor ✅",
+            "status": "Keneviz API çalışıyor ✅",
             "available_models": BOT_MODELS,
             "endpoints": {
                 "Ana endpoint": "/chat?message=merhaba",
